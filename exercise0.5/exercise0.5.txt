@@ -1,0 +1,14 @@
+title Exercise 0.5
+note over browser
+spa.js appends the note to the notes array 
+and sends the note to the server
+end note
+browser->server: HTTPS POST https://studies.cs.helsinki.fi//exampleapp/new_note_spa
+note over server:
+server recieves note and responds telling the browser
+that the operation was successful
+end note
+server->browser: HTTPS status 201(created)
+note over browser:
+browser re-renders the updated notes array
+end note 
