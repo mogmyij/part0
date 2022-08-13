@@ -1,0 +1,12 @@
+title exercise0.5
+browser->server: HTTPS GET https://studies.cs.helsinki.fi/exampleapp/spa
+browser->server: HTTPS GET /exampleapp/main.css
+browser->server: HTTPS GET /exampleapp/spa.js
+note over browser:
+browser executes spa.js and downloads JSON file
+end note
+browser->server: HTTPS GET /exampleapp/data.json
+note over browser:
+the JSON file is parsed and appeded using the DOM to the
+unordered list element
+end note 

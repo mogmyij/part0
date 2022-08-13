@@ -1,4 +1,4 @@
-title Exercise 0.5
+title Exercise 0.6
 note over browser
 spa.js appends the note to the notes array 
 and sends the note to the server
