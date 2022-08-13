@@ -1,0 +1,18 @@
+title Exercise 0.4
+browser->server: HTTPS POST https://studies.cs.helsinki.fi/exampleapp/new_note
+server->browser: HTTPS status code 302(redirect)
+note over browser:
+Browser is redirected to:
+https://studies.cs.helsinki.fi/exampleapp/notes
+end note
+browser->server: HTTPS GET https://studies.cs.helsinki.fi/exampleapp/notes
+browser->server: HTTPS GET https://studies.cs.helsinki.fi/exampleapp/main.css
+browser->server: HTTPS GET /exampleapp/main.js
+note over browser:
+browser starts executing js code 
+and retrives json file from server
+end note
+browser->server: HTTPS GET /exampleapp/data.json
+note over browser:
+Event handler formats and displays JSON
+end note
